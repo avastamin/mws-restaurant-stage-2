@@ -20,7 +20,7 @@ class DBHelper {
     var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
 
     // Open (or create) the database
-    var open = indexedDB.open("RestaurantDb", 1);
+    var open = indexedDB.open("RestaurantDB", 1);
 
     // Create the IndexDb schema
     open.onupgradeneeded = function() {
